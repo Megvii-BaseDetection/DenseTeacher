@@ -1,0 +1,10 @@
+# python cache
+*/__pycache__
+*.pyc
+
+# output folders
+*/output*
+
+# heavy files
+*.pkl
+*.pth
