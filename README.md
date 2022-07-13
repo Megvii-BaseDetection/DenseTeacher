@@ -4,7 +4,6 @@ This project provides an implementation for our ECCV2022 paper "[DenseTeacher: D
 
 <img src="./illustration.png" width="700" height="330">
 
-# code coming soon
 
 ## Requirements
 * [cvpods](https://github.com/Megvii-BaseDetection/cvpods)
