@@ -60,7 +60,7 @@ _config_dict = dict(
         OPTIMIZER=dict(
             BASE_LR=0.01,
         ),
-        IMS_PER_BATCH=16,
+        IMS_PER_BATCH=8,
         CHECKPOINT_PERIOD=5000,
         CLIP_GRADIENTS=dict(ENABLED=True)
     ),
@@ -80,8 +80,8 @@ _config_dict = dict(
             UNSUP_WEIGHT=1,
             SUPPRESS='linear',
             WEIGHTS=dict(
-                LOGITS=4.,
-                DELTAS=4.,
+                LOGITS=3.,
+                DELTAS=1.,
                 QUALITY=1.,    
             ),
             GAMMA=2.

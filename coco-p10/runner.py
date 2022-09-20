@@ -325,13 +325,13 @@ class SemiRunner(DefaultRunner):
             reduction="sum",
         ) / fg_num
 
-        loss_deltas = (iou_loss(
+        loss_deltas = iou_loss(
             student_deltas[b_mask],
             teacher_deltas[b_mask],
             box_mode="ltrb",
             loss_type='giou',
-            reduction="none",
-        ) * teacher_quality[b_mask]).mean()
+            reduction="mean",
+        )
 
         loss_quality = F.binary_cross_entropy(
             student_quality[b_mask].sigmoid(),
