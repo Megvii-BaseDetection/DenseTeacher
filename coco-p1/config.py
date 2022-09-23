@@ -61,6 +61,7 @@ _config_dict = dict(
             BASE_LR=0.01,
         ),
         IMS_PER_BATCH=8,
+        IMS_PER_DEVICE=1,
         CHECKPOINT_PERIOD=5000,
         CLIP_GRADIENTS=dict(ENABLED=True)
     ),
@@ -94,7 +95,7 @@ _config_dict = dict(
     INPUT=dict(
         AUG=dict(
             TRAIN_PIPELINES=dict(
-                SUPERVISED=(WeakAug,dict(short_edge_length=800, max_size=1333, sample_style="choice")),
+                SUPERVISED=(WeakAug,dict(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style="choice")),
                 UNSUPERVISED=(StrongAug,)
             ),
             TEST_PIPELINES=[
