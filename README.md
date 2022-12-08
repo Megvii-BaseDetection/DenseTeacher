@@ -1,6 +1,6 @@
 # DenseTeacher
 
-This project provides an implementation for our ECCV2022 paper "[DenseTeacher: Dense Pseudo-Label for Semi-supervised Object Detection]()" on PyTorch.
+This project provides an implementation for our ECCV2022 paper "[DenseTeacher: Dense Pseudo-Label for Semi-supervised Object Detection](https://arxiv.org/abs/2207.02541v2)" on PyTorch.
 
 <img src="./illustration.png" width="700" height="330">
 
